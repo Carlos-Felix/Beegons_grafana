@@ -186,14 +186,16 @@
       },
       "id": 8,
       "options": {
-        "folderId": 6,
+        "folderId": 0,
         "maxItems": 10,
         "query": "",
         "showHeadings": false,
         "showRecentlyViewed": false,
         "showSearch": true,
         "showStarred": false,
-        "tags": []
+        "tags": [
+          "Module"
+        ]
       },
       "pluginVersion": "8.3.3",
       "title": "Modules",
@@ -216,6 +218,6 @@
   "timezone": "",
   "title": "Home",
   "uid": "wWUdIyy7z",
-  "version": 6,
+  "version": 10,
   "weekStart": ""
 }

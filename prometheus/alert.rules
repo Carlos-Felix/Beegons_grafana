@@ -68,3 +68,23 @@ groups:
       summary: "Jenkins high memory usage"
       description: "Jenkins memory consumption is at {{ humanize $value}}."
 
+- name: beegons
+  rules:
+  - alert: temperature_high
+    expr: temperature{id="MOD1", instance="go_data:4040", job="data_beegons"} > 30 
+    for: 30s
+    labels:
+      severity: critical
+    annotations:
+      summary: "High temperature"
+      description: "Temperature MOD1 is high for 30s"
+  - alert: pressure_high
+    expr: pressure{id="MOD1", instance="go_data:4040", job="data_beegons"} > 30 
+    for: 30s
+    labels:
+      severity: critical
+    annotations:
+      summary: "High pressure"
+      description: "Pressure MOD1 is high for 30s"
+
+
